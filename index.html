@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi super página web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #550a96; /* Cambia el color de fondo de la tabla */
+            color: #ffffff; /* Cambia el color del texto de la tabla */
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .tenor-gif-embed {
+            max-width: 200px; /* Ajusta este valor según sea necesario para el tamaño deseado */
+            margin: 0 auto; /* Centra el GIF horizontalmente */
+        }
+        /* Agregamos estilos para el área que cambiará con el botón */
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: cursive;">Hola mundo</h1>
+    
+    <div class="tenor-gif-embed" data-postid="15767473" data-share-method="host" data-aspect-ratio="1.29555" data-width="100%"><a href="https://tenor.com/view/pikachu-pokemon-waving-wink-cute-gif-15767473">Pikachu Pokemon GIF</a>from <a href="https://tenor.com/search/pikachu-gifs">Pikachu GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div>
+        <h2>Name:</h2>
+        <p>Vicente Acevedo</p>
+        <h2>Major:</h2>
+        <p>Ciencias de la computación</p>
+        <h2>Year of University Enrollment:</h2>
+        <p>2021</p>
+        <h2>Link to Github:</h2>
+        <p><a href="https://github.com/VicenteAcevedoLav02">github.com/cpapumisterioso</a></p>
+        <h2>Personal Summary:</h2>
+        <p>Inteligente, guapo, atractivo y sumamente chistoso. Todas son palabras que probablemente no se usarían para describirme.</p>
+        <h2>Skills:</h2>
+         <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>None at all (no nos enseñan excel en la u :c )</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td>None at all</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>Very bueno</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td>Lo más mejor que hay</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="output">
+        <label for="text-input">Deja un mensaje para que aparezca al final de la página!:</label>
+        <input type="text" id="text-input">
+        <button onclick="updateOutput()">Actualizar</button>
+    </div>
+
+    <script>
+        function updateOutput() {
+            var inputValue = document.getElementById("text-input").value;
+            document.getElementById("output").innerHTML = "<p>" + inputValue + "</p>";
+        }
+    </script>
+</body>
+</html>
